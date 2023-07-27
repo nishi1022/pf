@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medhium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    /* color: rgb(51, 51, 51, .7); */
+    color: orange;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.wrapper {
+    margin: 5% 20% 5% 10%;
+}
+
+h2 {
+    margin-bottom: 100px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 10px 15px 0 #d1ffea;
+}
+h3 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    padding: 15px;
+    box-shadow: 7px 10px 0 #d1ffea;
+}
+
+/* .aaa img {
+    width: 90%;
+    box-shadow: 10px 15px 0 #d1ffea;
+    border-radius: 10px;
+} */
+
+h2,
+h3 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 90%;
+}
+
+
+.h3-short {
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.flex {
+    display: flex;
+}
+
+.more {
+    margin: 70px 0 200px 0;
+    padding: 15px;
+    box-shadow: 7px 10px 0 #d1ffea;
+    width: 80%;
+    display: block;
+    text-align: right;
+}
+
+
+/*========================== HEADER ==========================*/
+h1 {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 70px;
+}
+
+.top_image {
+    background-image: url(img/pctop.jpg);
+    background-position: left;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#top_fixed {
+    position: fixed;
+    top: 0;
+    right: 3%;
+    width: 15%;
+    z-index: 10000;
+
+    padding-top: 100px;
+    line-height: 4;
+    font-size: 20px;
+}
+
+
+/*========================== PROF ==========================*/
+/* .prof .flex .h3-short{
+    margin-left: 10px;
+} */
+.proftop {
+    display: flex;
+    /* align-items: center; */
+}
+.proftop img {
+    width: 200px;
+    height: 250px;
+    margin-right: 1em;
+}
+
+.orangered {
+    background-color: #ff3e3e;
+    width: 100px;
+    color: #fff;
+    text-align: center;
+}
+.yellow {
+    background-color: #fff696;
+    width: 100px;
+    text-align: center;
+}
+
+.grid_c4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3%;
+    margin-top: 50px;
+    padding: 3%;
+}
+
+.grid_c3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+}
+.grid_c3 img,
+.grid_c4 img {
+    width: auto;
+    height: 100px;
+}
+
+
+.exvision {
+    display: flex;
+}
+
+.exvision p,
+.magazine-content p {
+    margin: 0;
+}
+.ex-phot {
+    margin-top: 90px;
+}
+
+.ex-phot img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.ex-year {
+    font-weight: bold;
+    line-height: 3;
+}
+.ex-overvew,
+.ex-date {
+    text-indent: 2em;
+}
+.ex-date {
+    text-decoration-line: underline;
+}
+.magazine-content {
+    margin-left: 240px;
+}
+
+/*========================== SITE ==========================*/
+/* .site section {
+    background-color: #d1ffea;
+} */
+.sitelink {
+    text-decoration-line: underline;
+}
+.sitelink img {
+    display: block;
+    width: 70vw;
+    border: 1px solid #000;
+    margin-top: 30px;
+}
+.sitelink img:hover {
+    opacity: 0.7;
+}
+
+
+/*========================== ILLUST ==========================*/
+.illustgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3%;
+}
+
+.illustgrid img {
+    width: 150px;
+    height: auto;
+}
+
+
+
+/*========================== CONTACT ==========================*/
+#contact {
+    text-align: center;
+}
+dl {
+    margin-bottom: 100px;
+}
+dt {
+    text-align: left;
+    text-indent: 15%;
+    margin-top: 10px;
+}
+input,
+textarea {
+    padding: 5px;
+    width: 50vw;
+}
+
+textarea {
+    height: 10em;
+}
+
+
+
+/*========================== FOOTER ==========================*/
+footer {
+    border-top: 1px solid #333;
+}
+footer small {
+    text-align: center;
+    display: block;
+}
