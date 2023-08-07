@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.54 129.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #040000;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+
+      .cls-2 {
+        fill: #040000;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_2-2" data-name="レイヤー 2">
+    <g>
+      <rect class="cls-1" x="5" y="5" width="119.54" height="119.54" rx="28.57" ry="28.57"/>
+      <rect class="cls-1" x="36.2" y="36.2" width="57.13" height="57.13" rx="28.57" ry="28.57"/>
+      <circle class="cls-2" cx="101.03" cy="28.5" r="7.7"/>
+    </g>
+  </g>
+</svg>

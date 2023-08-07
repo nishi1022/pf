@@ -11,7 +11,7 @@ body {
 }
 
 img {
-    width: 100px;
+    width: 100%;
     height: auto;
 }
 
@@ -40,6 +40,7 @@ h2 {
     text-align: center;
     box-shadow: 10px 15px 0 #d1ffea;
 }
+
 h3 {
     margin-top: 100px;
     margin-bottom: 80px;
@@ -70,6 +71,7 @@ h3 {
 
 .flex {
     display: flex;
+    justify-content: space-around;
 }
 
 .more {
@@ -79,6 +81,15 @@ h3 {
     width: 80%;
     display: block;
     text-align: right;
+}
+
+@media (max-width:750px) {
+    h2,
+    h3 {
+        padding: 7px;
+        font-size: 20px;
+        margin-top: 200px;
+    }
 }
 
 
@@ -109,6 +120,29 @@ h1 {
     font-size: 20px;
 }
 
+@media (max-width:750px) {
+    h1 {
+        padding: 0;
+    }
+    #top_fixed {
+        visibility: hidden;
+        width: 0;
+        /* position: static; */
+    }
+    ul {
+        display: flex;
+    }
+    li + li {
+        font-size: 10px;
+        margin-left: 3%;
+    }
+    .top_image {
+        background-size: 100%;
+        height: 50vh;
+    }
+}
+
+
 
 /*========================== PROF ==========================*/
 /* .prof .flex .h3-short{
@@ -118,22 +152,54 @@ h1 {
     display: flex;
     /* align-items: center; */
 }
+
 .proftop img {
     width: 200px;
     height: 250px;
     margin-right: 1em;
 }
 
-.orangered {
-    background-color: #ff3e3e;
-    width: 100px;
-    color: #fff;
+.love {
+    margin: 80px auto;
+}
+.lov-flex {
+    display: flex;
+}
+.inu img {
+    width: 200px;
+}
+
+@media (max-width:750px) {
+    
+.proftop {
+    display: block;
     text-align: center;
 }
+.proftop p + p {
+    text-align: left;
+}
+.lov-flex {
+    display: block;
+    text-align: center;
+}
+.lov-flex h4 {
+    margin-top: 50px;
+}
+}
+
+.orangered {
+    background-color: #ff3e3e;
+    width: 150px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .yellow {
     background-color: #fff696;
-    width: 100px;
+    width: 150px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .grid_c4 {
@@ -149,6 +215,7 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3%;
 }
+
 .grid_c3 img,
 .grid_c4 img {
     width: auto;
@@ -156,14 +223,27 @@ h1 {
 }
 
 
+@media (max-width:750px) {
+    .skill-img img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+
 .exvision {
     display: flex;
+}
+
+.exvision h3 {
+    margin-bottom: 50px;
 }
 
 .exvision p,
 .magazine-content p {
     margin: 0;
 }
+
 .ex-phot {
     margin-top: 90px;
 }
@@ -178,18 +258,57 @@ h1 {
 
 .ex-year {
     font-weight: bold;
-    line-height: 3;
+    line-height: 1;
+    box-shadow: 0px 10px 0 #d1ffea;
 }
-.ex-overvew,
+
+.ex-overvew {
+    margin: 50px 0 100px 0;
+}
+
+/* .ex-date {
+    padding-top: 15px;
+} */
+
+/* .ex-overvew {
+    padding-bottom: 30px;
+} */
+
+/* .ex-overvew:last-child {
+    padding-bottom: 0;
+} */
+
+/* .ex-overvew,
 .ex-date {
     text-indent: 2em;
-}
-.ex-date {
-    text-decoration-line: underline;
-}
+} */
+
 .magazine-content {
     margin-left: 240px;
 }
+
+@media (max-width:750px) {
+    .grid_c3,
+    .grid_c4 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .exvision {
+        display: block;
+    }
+    .ex-phot {
+        /* display: flex; */
+        visibility: hidden;
+        height: 0;
+    }
+    
+    .ex-overvew {
+        margin: 50px  0 50px 2em;
+    }
+    
+.magazine-content {
+    margin-left: 0;
+}
+} 
 
 /*========================== SITE ==========================*/
 /* .site section {
@@ -198,14 +317,22 @@ h1 {
 .sitelink {
     text-decoration-line: underline;
 }
+
 .sitelink img {
     display: block;
     width: 70vw;
     border: 1px solid #000;
     margin-top: 30px;
 }
+
 .sitelink img:hover {
     opacity: 0.7;
+}
+
+@media (max-width:750px) {
+    #site .h3-short {
+        margin-top: 40px;
+    }
 }
 
 
@@ -216,42 +343,333 @@ h1 {
     gap: 3%;
 }
 
-.illustgrid img {
-    width: 150px;
+/* .illustgrid img {
+    width: 200px;
     height: auto;
+} */
+
+/* @media (max-width:750px) {
+    .illustgrid {
+    grid-template-columns: 1fr 1fr;
+    }
+} */
+
+
+@media (max-width:750px) {
+    #illust {
+        margin-bottom: 0;
+    }
+    #illust .more {
+visibility: hidden;
+height: 0;
+    }
 }
 
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*========================== CONTACT ==========================*/
-#contact {
+/* #contact {
     text-align: center;
 }
+
 dl {
     margin-bottom: 100px;
 }
+
 dt {
     text-align: left;
     text-indent: 15%;
     margin-top: 10px;
 }
+
 input,
 textarea {
     padding: 5px;
     width: 50vw;
 }
 
-textarea {
-    height: 10em;
+form span {
+    color: red;
+    font-size: 12px;
+    margin-left: 1em;
 }
 
+textarea {
+    height: 10em;
+} */
+#contact {
+    padding: 40px;
+}
 
+#contact .h3-short {
+    margin: 20px auto 100px;
+}
+
+#contact p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#contact a {
+    color: orange;
+    text-decoration: underline;
+}
+
+#contact a:hover {
+    color: #ff3e3e;
+}
 
 /*========================== FOOTER ==========================*/
 footer {
+    padding-top: 50px;
     border-top: 1px solid #333;
-}
-footer small {
     text-align: center;
-    display: block;
 }
+
+footer a {
+    display: block;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+footer a+a {
+    margin-left: 20px;
+}
+
+footer a:hover {
+    background-color: #d1ffea;
+    border-radius: 10px;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+footer p {
+    margin: 0px;
+}
+
+footer small {
+    display: block;
+    margin-top: 50px;
+}
+
+
+
+/*========================== ILLUSTpage ==========================*/
+
+.illust-titlegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+}
+
+#illustpage li {
+    margin-bottom: 50px;
+}
+
+/* #illustpage a {
+    color: #d1ffea;
+} */
+.banner1 {
+    background-image: url(illu-img/banner-land.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    text-indent: 1em;
+    width: 300px;
+    opacity: .8;
+}
+
+.banner1:hover {
+    opacity: 1;
+}
+
+.banner2 {
+    background-image: url(illu-img/banner-yukari.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    text-indent: 1em;
+    width: 300px;
+    opacity: .8;
+}
+
+.banner2:hover {
+    opacity: 1;
+}
+
+.banner3 {
+    background-image: url(illu-img/banner-aurora.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    text-indent: 1em;
+    width: 300px;
+    opacity: .8;
+}
+
+.banner3:hover {
+    opacity: 1;
+}
+
+#illustpage .top_image {
+    height: 30vh;
+}
+
+.illustgrid h3 {
+    margin: 20px;
+    width: 190px;
+}
+
+
+
+/* モーダルCSS */
+.modal-wrapper {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+.thumbnail {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: block;
+    /* max-width:300px; */
+}
+
+.thumbnail:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    /*下に動く*/
+
+}
+
+/*アイコンを表示*/
+/* .thumbnail:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f2d0";
+    padding-left: 8px;
+} */
+
+/*ラベルホバー時*/
+/* .thumbnail:hover {
+    color: #FFFFFF;
+    background-color: #4f96f6;
+    transition: .6s;
+} */
+
+.modal-wrapper:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+}
+
+.modal-wrapper:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal-wrapper::after {
+    display: inline-block;
+    height: 100%;
+    /* margin-left: -.05em; */
+    vertical-align: middle;
+    content: ""
+}
+
+.modal-wrapper .modal-window {
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+    max-width: 70%;
+    max-height: 70%;
+    padding: 3%;
+    /* max-width: 600px; */
+    /* padding: 10px 30px 25px; */
+    /* border-radius: 2px; */
+    background: #fff;
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, .6); */
+    vertical-align: middle
+}
+.modal-content {
+    margin: 0;
+}
+.modal-content img {
+    max-width: 100%;
+
+}
+/* -----------画像中央に寄った----------- */
+/* .modal-wrapper .modal-window .modal-content {
+    max-height: 80vh;
+    overflow-y: auto;
+    text-align: left
+} */
+
+/* .modal_title {
+    font-size: 1.5em;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+} */
+
+/* .modal_title::before,
+.modal_title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+} */
+
+/* h2 プライマリカラー*/
+/* .modal_title:before {
+    border-bottom: 4px solid #6bb6ff;
+    width: 100%;
+} */
+
+/* h2 セカンダリカラー*/
+/* .modal_title:after {
+    border-bottom: 4px solid #c8e4ff;
+    width: 100%;
+} */
+/* 
+.modal-content p {
+    margin: 10px 0 0 0;
+} */
+
+.modal-overlay {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8)
+}
+
+/* .modal-wrapper .modal-close {
+    z-index: 20;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 35px;
+    color: #95979c !important;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0
+} */
+
+/* .modal-wrapper .modal-close:hover {
+    color: #2b2e38 !important
+} */
