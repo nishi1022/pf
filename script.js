@@ -22,3 +22,7 @@ $(function () {
 	  $('#modalArea').fadeOut();
 	});
   });
+
+
+  
+//   Babel React
