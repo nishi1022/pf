@@ -128,6 +128,11 @@ h1 {
     width: 12em;
 }
 
+ul img {
+    width: 30px;
+    margin-left: 1em;
+}
+
 @media (max-width:750px) {
     h1 {
         padding: 0;
@@ -194,6 +199,10 @@ h1 {
         text-align: left;
     }
 
+    .inu {
+        display: flex;
+    }
+
     .lov-flex {
         display: block;
         text-align: center;
@@ -247,10 +256,19 @@ h1 {
     }
 }
 
-
-.exvision {
+.career {
     display: flex;
 }
+.career-item {
+    border: 2px dashed #d1ffea;
+}
+.exvision,
+.magazine-content {
+    width: 50%;
+}
+/* .exvision {
+    display: flex;
+} */
 
 .exvision h3 {
     margin-bottom: 50px;
@@ -260,9 +278,9 @@ h1 {
 .magazine-content p {
     margin: 0;
 }
-.ex-content {
+/* .ex-content {
     display: flex;
-}
+} */
 .ex-phot {
     margin-top: 90px;
 }
@@ -279,6 +297,12 @@ h1 {
     font-weight: bold;
     line-height: 1;
     box-shadow: 0px 10px 0 #d1ffea;
+}
+.ex-14 {
+    margin-top: 20em;
+}
+.ex-15 {
+    margin-top: 10em;
 }
 
 .ex-overvew {
@@ -336,6 +360,12 @@ h1 {
 /* .site section {
     background-color: #d1ffea;
 } */
+.site-content {
+    border: 1px solid #000;
+    border-radius: 50px;
+    background-color: #d1ffea;
+    margin-bottom: 50px;
+}
 .sitelink {
     text-decoration-line: underline;
 }
