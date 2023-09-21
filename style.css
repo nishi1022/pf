@@ -5,7 +5,9 @@ html {
 }
 
 body {
-    font-family: "Yu Gothic Medium", "游ゴシック Medhium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    /* font-family: "Yu Gothic Medium", "游ゴシック Medhium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif; */
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
     line-height: 1.7;
     color: #333;
 }
@@ -23,6 +25,7 @@ a {
 a:hover {
     /* color: rgb(51, 51, 51, .7); */
     color: orange;
+    transition: 0.3s;
 }
 
 ul {
@@ -66,7 +69,8 @@ h3 {
     margin-bottom: 20px;
     padding: 10px;
     text-align: center;
-    width: 200px;
+    width: fit-content;
+    background-color: #fff;
 }
 
 .flex {
@@ -106,9 +110,9 @@ h1 {
     /*
     background-size: 85%;
     height: 100vh; */
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 803px;
 }
 
 #top_fixed {
@@ -120,8 +124,15 @@ h1 {
 
     text-align: left;
     padding-top: 100px;
+    padding-bottom: 100px;
     line-height: 4;
     font-size: 20px;
+    text-indent: 2em;
+
+    background-color: #fff;
+    opacity: 0.8;
+    border: 1px solid #000;
+    border-radius: 50px;
 }
 
 #top_fixed li {
@@ -230,7 +241,8 @@ ul img {
 
 .grid_c4 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 3%;
     margin-top: 50px;
     padding: 3%;
@@ -245,7 +257,7 @@ ul img {
 .grid_c3 img,
 .grid_c4 img {
     width: auto;
-    height: 100px;
+    height: 70px;
 }
 
 
@@ -259,12 +271,13 @@ ul img {
 .career {
     display: flex;
 }
-.career-item {
+/* .career-item {
     border: 2px dashed #d1ffea;
-}
+} */
 .exvision,
 .magazine-content {
     width: 50%;
+    margin-right: 4%;
 }
 /* .exvision {
     display: flex;
@@ -283,6 +296,7 @@ ul img {
 } */
 .ex-phot {
     margin-top: 90px;
+    display: flex;
 }
 
 .ex-phot img {
@@ -298,15 +312,17 @@ ul img {
     line-height: 1;
     box-shadow: 0px 10px 0 #d1ffea;
 }
-.ex-14 {
+/* .ex-14 {
     margin-top: 20em;
 }
 .ex-15 {
     margin-top: 10em;
-}
+} */
 
 .ex-overvew {
-    margin: 50px 0 100px 0;
+    /* margin: 50px 0 100px 0; */
+    margin: 20px 0 40px 1em;
+    font-size: 15px;
 }
 
 /* .ex-date {
@@ -365,7 +381,9 @@ ul img {
     border-radius: 50px;
     background-color: #d1ffea;
     margin-bottom: 50px;
+    padding: 5%;
 }
+
 .sitelink {
     text-decoration-line: underline;
 }
@@ -386,6 +404,32 @@ ul img {
         margin-top: 40px;
     }
 }
+
+
+
+.tanuki-hero {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 3%;
+    margin-bottom: 50px;
+    background-color: #fff;
+}
+.tanuki-hero h3 {
+    margin: 20px auto 50px auto;
+}
+.tanuki-hero a {
+    font-size: 15px;
+}
+.tanukiimg {
+    border: 1px solid #000;
+}
+.tanuki-overvew {
+    border: 1px solid #000;
+    border-radius: 50px;
+    background-color: #d1ffea;
+    padding: 30px;
+}
+
 
 
 /*========================== ILLUST ==========================*/
@@ -513,6 +557,12 @@ footer small {
 
 
 /*========================== ILLUSTpage ==========================*/
+/* .toggle_none {
+    visibility: hidden
+} */
+#illustpage header {
+    display: none;
+}
 
 .illust-titlegrid {
     display: grid;
@@ -577,7 +627,7 @@ footer small {
 
 
 
-/* モーダルCSS */
+/* ===========モーダルCSS=========== */
 .modal-wrapper {
     z-index: 999;
     position: fixed;
@@ -644,15 +694,15 @@ footer small {
     display: inline-block;
     z-index: 20;
     position: relative;
-    max-width: 70%;
-    max-height: 70%;
-    padding: 3%;
+    /* max-width: 70%;
+    max-height: 70%; */
+    width: fit-content;
     /* max-width: 600px; */
     /* padding: 10px 30px 25px; */
-    /* border-radius: 2px; */
+    /* border-radius: 30px; */
     background: #fff;
     /* box-shadow: 0 0 30px rgba(0, 0, 0, .6); */
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .modal-content {
@@ -660,7 +710,7 @@ footer small {
 }
 
 .modal-content img {
-    max-width: 100%;
+    width: 60%;
 
 }
 

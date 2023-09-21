@@ -15,8 +15,11 @@ jQuery(function ($) {
 
 
 $(function () {
-	$('#openModal').click(function () {
+	$('#openModal').click(function (evt) {
 		$('#modalArea').fadeIn();
+		// クリックしたらクラス追加　ヘッダーの表示を消す
+		// evt.currentTarget.classList.toggle('toggle_none');
+		// document.getElementById('').classList.toggle('toggle_none');
 	});
 	$('#closeModal , #modalBg').click(function () {
 		$('#modalArea').fadeOut();
@@ -37,3 +40,13 @@ $(function () {
 
 
 //   Babel React
+
+
+// 繰り返し表示
+let num = 5;
+let count = 1;
+
+while (num <= count) {
+	document.getElementById('illustgrid').innerHTML += '';
+	count ++;
+};
