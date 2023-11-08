@@ -399,6 +399,31 @@ ul img {
     opacity: 0.7;
 }
 
+.sitegrid {
+    display: grid;
+    gap: 0;
+}
+.ovh3 {
+    margin-bottom: 0;
+}
+.sitegrid img {
+    width: 90%;
+}
+.gridoverviewimg {
+    /* grid-template-columns: -100px;
+    grid-area: 1 / 1 / 2 / 2; */
+    text-align: center;
+    border-top: 1px solid #333;
+}
+.gridoverview {
+    background-color: #d1ffea;
+    border: 1px soli0 d #000;
+    border-radius: 50px;
+    padding: 5%;
+    margin-left: 10%;
+    grid-area: 2 / 1 / 2 / 2;
+}
+
 @media (max-width:750px) {
     #site .h3-short {
         margin-top: 40px;
