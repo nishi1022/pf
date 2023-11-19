@@ -72,6 +72,7 @@ h2 {
         display: block;
     }
 }
+
 /* =================HEADER================ */
 header {
     width: 270px;
@@ -101,7 +102,8 @@ header li {
 .top {
     background-image: url(img/pctop.jpg);
     background-size: contain;
-    background-repeat: no-repeat;background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 500px;
 }
 
@@ -112,6 +114,7 @@ header li {
     border-bottom: 1px dashed #7e7e7e;
     padding: 40px;
 }
+
 .profname {
     font-size: 0 20px;
 }
@@ -120,6 +123,7 @@ header li {
     width: 170px;
     height: auto;
 }
+
 .ex-phot {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -134,10 +138,32 @@ header li {
     /* font-size: 15px; */
     line-height: 1.2;
 }
+
 .magazine-content {
     border-right: 1px solid #7e7e7e;
 }
 
+@media (max-width:750px) {
+    .ex-phot {
+        display: block;
+    }
+
+    .ex-phot div {
+        margin-bottom: 40px;
+    }
+
+    .magazine-content,
+    .exvision {
+        width: 100%;
+    }
+
+    .magazine-content {
+        border: none;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px dashed #7e7e7e;
+    }
+}
 
 /* =================SITE================ */
 
@@ -172,9 +198,16 @@ header li {
     margin-left: 2rem;
     /* font-size: 15px; */
 }
+
 .ex-overvew h3 {
     font-weight: normal;
     /* text-align: center; */
+}
+
+@media (max-width:750px) {
+    .sitelink img {
+        width: 100%;
+    }
 }
 
 /*========================== ILLUST ==========================*/
@@ -194,10 +227,20 @@ header li {
     margin-left: 30px;
 }
 
+@media (max-width:750px)  {
+    .paintgrid {
+        border: none;
+        padding: 40px 0;
+    }
+    .illugrid {
+        margin-left: 0;
+    }
+}
 /*========================== CONTACT ==========================*/
 #contact .flex {
     justify-content: space-around;
 }
+
 #contact a {
     text-decoration: underline;
     color: orange;
@@ -205,9 +248,16 @@ header li {
 
 /*========================== FOOTER ==========================*/
 footer {
+    padding-top: 320px;
+    text-align: center;
+
+    background-image: url(img/tnks.jpg);
+    background-size: contain;
+}
+
+.footer-fst {
     padding-top: 50px;
     border-top: 1px solid #7e7e7e;
-    text-align: center;
 }
 
 footer .flex {
@@ -229,4 +279,10 @@ footer small {
     display: block;
     margin-top: 30px;
     font-size: 15px;
+}
+
+@media (max-width:750px) {
+    footer {
+        padding-top: 150px;
+    }
 }
