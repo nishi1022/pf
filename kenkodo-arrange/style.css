@@ -59,14 +59,14 @@ header a {
     padding: 5px 17px;
 }
 
-.top-a {
+/* .top-a {
     padding: 10px 5px;
     height: 50px;
-}
+} */
 
 ul {
     list-style-type: none;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 nav li {
@@ -79,8 +79,9 @@ nav li {
 .nav-logo {
     background-image: url(icon-mame.svg);
     background-repeat: no-repeat;
-    background-position: center;
-    height: 50px;
+    background-position: top 30px center;
+    padding-top: 7px;
+    background-size: 50px;
 }
 
 h1 {
@@ -148,19 +149,23 @@ p {
 .h2-two {
     background-image: url(mame2.svg);
     background-repeat: no-repeat;
-    background-position: center top 10px;
+    background-position: center top 25px;
+    background-size: 60px;
+    padding: 12px;
 }
 
 .h2-three {
     background-image: url(mame3.svg);
     background-repeat: no-repeat;
-    background-position: center top 10px;
+    background-position: center top 20px;
+    background-size: 80px;
+    padding: 10px;
 }
 
 .h2-four {
     background-image: url(mame4.svg);
     background-repeat: no-repeat;
-    background-position: center top 10px;
+    background-position: center top 30px;
     background-size: 120px;
     padding: 20px;
 }
@@ -214,14 +219,22 @@ figure img {
         margin-bottom: 40px;
     }
 
-    section {
+    .wrapper {
         margin-bottom: 50px;
+    }
+
+    section {
+        padding: 5%;
     }
 
     .section-ex {
         margin-bottom: 40px;
         font-size: 15px;
         line-height: 2;
+    }
+
+    h3 {
+        margin-bottom: 20px;
     }
 }
 
@@ -271,6 +284,18 @@ textarea {
     background-image: url(bg-border.svg);
     padding-top: 20%;
 }
+
+
+.shop h3 {
+    background-position: top 20px left 15px;
+    background-size: 30px;
+    padding: 12px;
+}
+/* 
+@media (max-width:700px) {
+    .shop {
+        padding-top: 20%;
+    } */
 
 /*---------------------------RECIPE---------------------------*/
 
