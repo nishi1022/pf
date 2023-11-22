@@ -72,7 +72,7 @@ h2 {
         display: block;
     }
 
-    
+
 }
 
 /* =================HEADER================ */
@@ -156,6 +156,7 @@ header li {
     border-right: 1px solid #7e7e7e;
     width: 40%;
 }
+
 .exvision {
     width: 60%;
 }
@@ -164,11 +165,12 @@ header li {
     .love {
         margin-left: 0px;
     }
+
     .magazine-content,
     .exvision {
         width: 100%;
     }
-    
+
     /* .ex-overvew {
         margin-bottom: 1em;
     } */
@@ -195,12 +197,27 @@ header li {
     padding-left: 1em;
 }
 
+/* .sitea {
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.sitea::after {
+    content: '';
+    width: 100px;
+    height: 15px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    transform: skew(45deg);
+} */
+
 .sitelink img {
     /* width: 680px; */
     width: 50vw;
     height: auto;
     border: 1px solid #333;
     border-radius: 3%;
+    margin-top: 1em;
     margin-right: 2rem;
     box-shadow: 6px 10px 0 #ffe0ba;
     margin-bottom: 50px;
@@ -239,15 +256,34 @@ header li {
     text-decoration: underline;
     color: orange;
 }
+#site button a {
+    text-decoration: none;
+    color: #333;
+}
+#site button {
+    border: 1px solid orange;
+    border-radius: 50px;
+    padding: 10px 50px;
+    display: block;
+    margin: 2em auto;
+}
+
+#site button:hover {
+    background-color: orange;
+    color: #fff;
+    transition: 0.3s;
+}
 
 @media (max-width:750px) {
     .ex-overvew h3 {
         margin-top: 1em;
     }
+
     .sitelink img {
         width: 100%;
         margin-bottom: 10px;
     }
+
     .ex-overvew {
         margin-bottom: 60px;
     }
@@ -257,6 +293,7 @@ header li {
 #illust .flex {
     justify-content: center;
 }
+
 .illustgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -287,6 +324,7 @@ header li {
 #contact .flex {
     justify-content: space-around;
 }
+
 @media (max-width:750px) {
     .adress {
         text-align: center;
@@ -297,7 +335,7 @@ header li {
 
 /*========================== FOOTER ==========================*/
 footer {
-    padding-top: 320px;
+    padding-top: 370px;
     text-align: center;
 
     background-image: url(img/tnks.jpg);
@@ -359,6 +397,7 @@ footer small {
     display: block;
     /* max-width:300px; */
 }
+
 .thumbnail:active {
     /*ボタンを押したとき*/
     -webkit-transform: translateY(2px);
@@ -376,16 +415,19 @@ footer small {
     padding: 40px;
     text-align: center;
 }
+
 .modal-wrapper:not(:target) {
     opacity: 0;
     visibility: hidden;
     transition: opacity .3s, visibility .3s;
 }
+
 .modal-wrapper:target {
     opacity: 1;
     visibility: visible;
     transition: opacity .4s, visibility .4s;
 }
+
 .modal-wrapper::after {
     display: inline-block;
     height: 100%;
@@ -393,6 +435,7 @@ footer small {
     vertical-align: middle;
     content: ""
 }
+
 .modal-wrapper .modal-window {
     box-sizing: border-box;
     display: inline-block;
@@ -422,6 +465,7 @@ footer small {
 .modal-content {
     margin: 30px 0;
 }
+
 .modal-content img {
     width: auto;
     height: 80vh;
