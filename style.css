@@ -71,6 +71,8 @@ h2 {
     .flex {
         display: block;
     }
+
+    
 }
 
 /* =================HEADER================ */
@@ -108,20 +110,25 @@ header li {
 }
 
 /* =================PROF================ */
+/* .profex {
+    width: 600px;
+} */
 
 .love {
     border-top: 1px dashed #7e7e7e;
-    border-bottom: 1px dashed #7e7e7e;
-    padding: 40px;
+    /* padding: 40px; */
+    margin-left: 270px;
 }
 
 .profname {
-    font-size: 0 20px;
+    font-size: 24px;
+    margin-left: 70px;
 }
 
 .profimg {
     width: 170px;
     height: auto;
+    margin-right: 2em;
 }
 
 
@@ -130,15 +137,16 @@ header li {
 }
 
 .ex-phot {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1%;
-    padding: 0 70px;
+    padding: 0 70px; */
+    width: 40%;
 }
 
 .magazine-content,
 .exvision {
-    width: 50%;
+    /* width: 50%; */
     padding: 2%;
     /* font-size: 15px; */
     line-height: 1.2;
@@ -146,21 +154,24 @@ header li {
 
 .magazine-content {
     border-right: 1px solid #7e7e7e;
+    width: 40%;
+}
+.exvision {
+    width: 60%;
 }
 
 @media (max-width:750px) {
-    .ex-phot {
-        display: block;
+    .love {
+        margin-left: 0px;
     }
-
-    .ex-phot div {
-        margin-bottom: 40px;
-    }
-
     .magazine-content,
     .exvision {
         width: 100%;
     }
+    
+    /* .ex-overvew {
+        margin-bottom: 1em;
+    } */
 
     .magazine-content {
         border: none;
@@ -211,10 +222,10 @@ header li {
 }
 
 .siteimg img {
-   height: 80vh;
-   width: auto;
-   border: 1px solid #333;
-   margin-right: 5px;
+    height: 80vh;
+    width: auto;
+    border: 1px solid #333;
+    margin-right: 5px;
 }
 
 .ovv img {
@@ -230,13 +241,22 @@ header li {
 }
 
 @media (max-width:750px) {
+    .ex-overvew h3 {
+        margin-top: 1em;
+    }
     .sitelink img {
         width: 100%;
+        margin-bottom: 10px;
+    }
+    .ex-overvew {
+        margin-bottom: 60px;
     }
 }
 
 /*========================== ILLUST ==========================*/
-
+#illust .flex {
+    justify-content: center;
+}
 .illustgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -252,18 +272,26 @@ header li {
     margin-left: 30px;
 }
 
-@media (max-width:750px)  {
+@media (max-width:750px) {
     .paintgrid {
         border: none;
         padding: 40px 0;
     }
+
     .illugrid {
         margin-left: 0;
     }
 }
+
 /*========================== CONTACT ==========================*/
 #contact .flex {
     justify-content: space-around;
+}
+@media (max-width:750px) {
+    .adress {
+        text-align: center;
+        margin-top: 30px;
+    }
 }
 
 
@@ -306,4 +334,95 @@ footer small {
     footer {
         padding-top: 150px;
     }
+}
+
+
+
+
+/*========================== ILLUSTpage ==========================*/
+#illustpage .top_image {
+    height: 30vh;
+}
+
+.illustgrid h3 {
+    margin: 20px;
+    width: 190px;
+}
+
+
+
+/* ===========モーダルCSS=========== */
+.thumbnail {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: block;
+    /* max-width:300px; */
+}
+.thumbnail:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    /*下に動く*/
+}
+
+.modal-wrapper {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    text-align: center;
+}
+.modal-wrapper:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+}
+.modal-wrapper:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s, visibility .4s;
+}
+.modal-wrapper::after {
+    display: inline-block;
+    height: 100%;
+    /* margin-left: -.05em; */
+    vertical-align: middle;
+    content: ""
+}
+.modal-wrapper .modal-window {
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+    /* max-width: 70%;
+    max-height: 70%; */
+    width: fit-content;
+    /* max-width: 600px; */
+    /* padding: 10px 30px 25px; */
+    /* border-radius: 30px; */
+    background: #fff;
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, .6); */
+    vertical-align: middle;
+}
+
+.modal-overlay {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8)
+}
+
+.modal-content {
+    margin: 30px 0;
+}
+.modal-content img {
+    width: auto;
+    height: 80vh;
 }
