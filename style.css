@@ -296,33 +296,49 @@ header li {
 
 .illustgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 3%;
 }
 
-.paintgrid {
+.thumbnail img {
+    object-fit: cover;
+    width: 10vw;
+    height: 20vh;
+}
+/* .thumbnail {
+    width: 70%;
+    height: 100%;
+    position:absolute;
+} */
+
+/* .paintgrid {
     border-right: 1px solid #7e7e7e;
     padding-right: 30px;
 }
 
 .illugrid {
     margin-left: 30px;
-}
+} */
 
 @media (max-width:750px) {
-    .paintgrid {
+    /* .paintgrid {
         border: none;
         padding: 40px 0;
     }
 
     .illugrid {
         margin-left: 0;
-    }
+    } */
 }
 
 /*========================== CONTACT ==========================*/
 #contact .flex {
     justify-content: space-around;
+}
+
+#contact img {
+    width: 400px;
+    height: auto;
 }
 
 @media (max-width:750px) {
