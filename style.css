@@ -251,7 +251,7 @@ header li {
 }
 
 
-#site a,
+.ex-overvew a,
 #contact a {
     text-decoration: underline;
     color: orange;
@@ -304,6 +304,12 @@ button:hover {
     object-fit: cover;
     width: 10vw;
     height: 20vh;
+}
+
+.modal-content img {
+    height: 70vh;
+    max-width: 70vw;
+    object-fit: contain;
 }
 /* .thumbnail {
     width: 70%;
