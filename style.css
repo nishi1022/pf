@@ -260,7 +260,7 @@ header li {
     text-decoration: none;
     color: #333;
 }
-#site button {
+button {
     border: 1px solid orange;
     border-radius: 50px;
     padding: 10px 50px;
@@ -268,7 +268,7 @@ header li {
     margin: 2em auto;
 }
 
-#site button:hover {
+button:hover {
     background-color: orange;
     color: #fff;
     transition: 0.3s;
@@ -321,6 +321,10 @@ header li {
 } */
 
 @media (max-width:750px) {
+    .illustgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     /* .paintgrid {
         border: none;
         padding: 40px 0;
