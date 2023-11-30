@@ -191,7 +191,7 @@ header li {
     padding-top: 50px;
 }
 
-.ex-overvew h3 {
+#site h4 {
     margin: 30px 0 10px;
     border-bottom: 2px dashed #ffbb94;
     padding-left: 1em;
@@ -229,37 +229,65 @@ header li {
     /* cursor: url(icon/syousai.svg),auto; */
 }
 
+/*アコーディオンで現れるエリア*/
+/* .box {
+    display: none;
+} */
+.hidden {
+    display: none;
+}
+
+
 .ex-overvew p {
     margin-left: 1rem;
 }
 
-.ex-overvew h3 {
+/* .ex-overvew h3 {
     font-weight: normal;
-    /* text-align: center; */
-}
+    text-align: center;
+} */
 
 .siteimg img {
-    height: 80vh;
+    height: 900px;
     width: auto;
     border: 1px solid #333;
     margin-right: 5px;
 }
 
-.ovv img {
-    width: 35%;
-    height: auto;
+.ovv {
+    margin-left: 20px;
 }
 
+.ovvcontent {
+    padding: 20px 40px;
+    background-color: #fffce2;
+    border-radius: 50px;
+}
+
+.ovvcontent h4 {
+    margin: 0;
+}
+
+/* .ovvcontent + .ovvcontent p {
+    margin-left: 50%;
+} */
+.ovv img {
+    max-width: 700px;
+    height: 170px;
+    margin-right: 20px;
+}
 
 .ex-overvew a,
 #contact a {
     text-decoration: underline;
     color: orange;
 }
+
 #site button a {
     text-decoration: none;
     color: #333;
 }
+
 button {
     border: 1px solid orange;
     border-radius: 50px;
@@ -292,14 +320,8 @@ button:hover {
 /*========================== ILLUST ==========================*/
 .illustgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
-
-}
-
-.illustgrid div {
-    margin: 0;
-    padding: 0;
 
 }
 
@@ -307,7 +329,7 @@ button:hover {
     object-fit: cover;
     max-width: 170px;
     max-height: 150px;
-    
+
     /* max-width: 100%;
     height: 90%; */
 }
@@ -338,6 +360,7 @@ button:hover {
     .illustgrid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     /* .paintgrid {
         border: none;
         padding: 40px 0;
