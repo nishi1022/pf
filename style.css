@@ -41,7 +41,6 @@ article {
 
 .flex {
     display: flex;
-    /* justify-content: space-around; */
 }
 
 h1 {
@@ -52,13 +51,6 @@ h1 {
 }
 
 h2 {
-    /* text-indent: 2em;
-    position: relative;
-    padding: 0 30px;
-    width: fit-content; */
-
-    /* text-align: center; */
-    /* width: fit-content; */
     padding-left: 40px;
     background-image: url(icon/slash.svg), url(icon/slash.svg);
     /* position: relative; */
@@ -110,9 +102,6 @@ header li {
 }
 
 /* =================PROF================ */
-/* .profex {
-    width: 600px;
-} */
 
 .love {
     border-top: 1px dashed #7e7e7e;
@@ -136,13 +125,6 @@ header li {
     margin: 10px 0 5px;
 }
 
-.ex-phot {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1%;
-    padding: 0 70px; */
-    width: 40%;
-}
 
 .magazine-content,
 .exvision {
@@ -162,6 +144,9 @@ header li {
 }
 
 @media (max-width:750px) {
+    #prof img {
+        margin-right: 0;
+    }
     .love {
         margin-left: 0px;
     }
@@ -171,15 +156,15 @@ header li {
         width: 100%;
     }
 
-    /* .ex-overvew {
-        margin-bottom: 1em;
-    } */
-
     .magazine-content {
         border: none;
         margin-bottom: 40px;
         padding-bottom: 40px;
         border-bottom: 1px dashed #7e7e7e;
+    }
+
+    .exvision .ex-phot {
+        display: flex;
     }
 }
 
@@ -197,19 +182,6 @@ header li {
     padding-left: 1em;
 }
 
-/* .sitea {
-    display: flex;
-    border-bottom: 1px solid #000;
-}
-
-.sitea::after {
-    content: '';
-    width: 100px;
-    height: 15px;
-    border-bottom: solid 1px;
-    border-right: solid 1px;
-    transform: skew(45deg);
-} */
 
 .sitelink img {
     /* width: 680px; */
@@ -229,10 +201,6 @@ header li {
     /* cursor: url(icon/syousai.svg),auto; */
 }
 
-/*アコーディオンで現れるエリア*/
-/* .box {
-    display: none;
-} */
 .hidden {
     display: none;
 }
@@ -268,9 +236,6 @@ header li {
     margin: 0;
 }
 
-/* .ovvcontent + .ovvcontent p {
-    margin-left: 50%;
-} */
 .ovv img {
     max-width: 700px;
     height: 170px;
@@ -312,8 +277,33 @@ button:hover {
         margin-bottom: 10px;
     }
 
+    .siteview {
+        display: flex;
+        margin: 70px 0 30px 0;
+    }
+
+    .siteview img {
+        width: auto;
+        height: 550px;
+    }
+
     .ex-overvew {
         margin-bottom: 60px;
+    }
+
+    .ovvcontent {
+        padding: 20px;
+        background-color: #fffce2;
+        border-radius: 50px;
+    }
+
+    .ovv {
+        margin-left: 0;
+    }
+
+    .ovv img {
+        width: 200px;
+        height: auto;
     }
 }
 
@@ -335,40 +325,11 @@ button:hover {
 }
 
 
-/* .modal-content img {
-    max-width: 50vw;
-    object-fit: contain;
-} */
-
-
-/* .thumbnail {
-    width: 70%;
-    height: 100%;
-    position:absolute;
-} */
-
-/* .paintgrid {
-    border-right: 1px solid #7e7e7e;
-    padding-right: 30px;
-}
-
-.illugrid {
-    margin-left: 30px;
-} */
-
 @media (max-width:750px) {
     .illustgrid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    /* .paintgrid {
-        border: none;
-        padding: 40px 0;
-    }
-
-    .illugrid {
-        margin-left: 0;
-    } */
 }
 
 /*========================== CONTACT ==========================*/
@@ -385,6 +346,12 @@ button:hover {
     .adress {
         text-align: center;
         margin-top: 30px;
+    }
+
+    #contact img {
+        width: 200px;
+        height: auto;
+        text-align: center;
     }
 }
 
@@ -528,4 +495,17 @@ footer small {
     width: auto;
     height: 83vh;
     object-fit: contain;
+}
+
+
+@media (max-width:750px) {
+    .modal-wrapper .modal-window {
+        width: fit-content;
+        height: 60vh;
+    }
+    .modal-content img {
+        max-width: 300px;
+        height: 50vh;
+        object-fit: contain;
+    }
 }
