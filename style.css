@@ -2,6 +2,7 @@
 
 html {
     font-size: 100%;
+    box-sizing: border-box;
 }
 
 body {
@@ -52,7 +53,7 @@ h1 {
 
 h2 {
     padding-left: 40px;
-    background-image: url(icon/slash.svg), url(icon/slash.svg);
+    background-image: url(img/slash.svg), url(img/slash.svg);
     /* position: relative; */
     background-position: top left, bottom left 220px;
     background-size: 10px;
@@ -184,7 +185,6 @@ header li {
 
 
 .sitelink img {
-    /* width: 680px; */
     width: 50vw;
     height: auto;
     border: 1px solid #333;
@@ -205,7 +205,10 @@ header li {
     display: none;
 }
 
-
+.siteview {
+    width: 40%;
+    height: auto;
+}
 .ex-overvew p {
     margin-left: 1rem;
 }
@@ -215,15 +218,16 @@ header li {
     text-align: center;
 } */
 
-.siteimg img {
+/* .siteimg img {
     height: 900px;
     width: auto;
     border: 1px solid #333;
     margin-right: 5px;
-}
+} */
 
 .ovv {
     margin-left: 20px;
+    width: 60%;
 }
 
 .ovvcontent {
@@ -234,12 +238,6 @@ header li {
 
 .ovvcontent h4 {
     margin: 0;
-}
-
-.ovv img {
-    max-width: 700px;
-    height: 170px;
-    margin-right: 20px;
 }
 
 .ex-overvew a,
@@ -280,6 +278,7 @@ button:hover {
     .siteview {
         display: flex;
         margin: 70px 0 30px 0;
+        width: 100%;
     }
 
     .siteview img {
@@ -299,6 +298,7 @@ button:hover {
 
     .ovv {
         margin-left: 0;
+        width: 100%;
     }
 
     .ovv img {
