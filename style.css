@@ -218,12 +218,6 @@ header li {
     text-align: center;
 } */
 
-/* .siteimg img {
-    height: 900px;
-    width: auto;
-    border: 1px solid #333;
-    margin-right: 5px;
-} */
 
 .ovv {
     margin-left: 20px;
@@ -240,6 +234,12 @@ header li {
     margin: 0;
 }
 
+/* .ovvcontent .flex img {
+    max-height: 200px;
+    width: auto;
+    border: 1px solid #333;
+    margin-right: 5px;
+} */
 .ex-overvew a,
 #contact a {
     text-decoration: underline;
