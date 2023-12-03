@@ -163,8 +163,8 @@ header li {
         padding-bottom: 40px;
         border-bottom: 1px dashed #7e7e7e;
     }
-
-    .exvision .ex-phot {
+    .love .flex,
+    .ex-phot {
         display: flex;
     }
 }
@@ -308,6 +308,11 @@ button:hover {
 }
 
 /*========================== ILLUST ==========================*/
+#illust .sitelink img {
+    width: 500px;
+    height: auto;
+    margin-bottom: 30px;
+}
 .illustgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -331,74 +336,6 @@ button:hover {
     }
 
 }
-
-/*========================== CONTACT ==========================*/
-#contact .flex {
-    justify-content: space-around;
-}
-
-#contact img {
-    width: 400px;
-    height: auto;
-}
-
-@media (max-width:750px) {
-    .adress {
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    #contact img {
-        width: 200px;
-        height: auto;
-        text-align: center;
-    }
-}
-
-
-/*========================== FOOTER ==========================*/
-footer {
-    padding-top: 370px;
-    text-align: center;
-
-    background-image: url(img/tnks.jpg);
-    background-size: contain;
-}
-
-.footer-fst {
-    padding-top: 50px;
-    border-top: 1px solid #7e7e7e;
-}
-
-footer .flex {
-    margin: 20px 50px;
-    align-items: center;
-    justify-content: space-around;
-}
-
-footer img {
-    width: 30px;
-    height: auto;
-}
-
-footer p {
-    margin: 0px;
-}
-
-footer small {
-    display: block;
-    margin-top: 30px;
-    font-size: 15px;
-}
-
-@media (max-width:750px) {
-    footer {
-        padding-top: 150px;
-    }
-}
-
-
-
 
 /*========================== ILLUSTpage ==========================*/
 #illustpage .top_image {
@@ -509,3 +446,70 @@ footer small {
         object-fit: contain;
     }
 }
+/*========================== CONTACT ==========================*/
+#contact .flex {
+    justify-content: space-around;
+}
+
+#contact img {
+    width: 400px;
+    height: auto;
+}
+
+@media (max-width:750px) {
+    .adress {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #contact img {
+        width: 200px;
+        height: auto;
+        text-align: center;
+    }
+}
+
+
+/*========================== FOOTER ==========================*/
+footer {
+    padding-top: 370px;
+    text-align: center;
+
+    background-image: url(img/tnks.jpg);
+    background-size: contain;
+}
+
+.footer-fst {
+    padding-top: 50px;
+    border-top: 1px solid #7e7e7e;
+}
+
+footer .flex {
+    margin: 20px 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+}
+
+footer p {
+    margin: 0px;
+}
+
+footer small {
+    display: block;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+@media (max-width:750px) {
+    footer {
+        padding-top: 150px;
+    }
+}
+
+
+
