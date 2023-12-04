@@ -102,6 +102,13 @@ header li {
     height: 500px;
 }
 
+@media (max-width:750px) {
+    header {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /* =================PROF================ */
 
 .love {
@@ -148,8 +155,13 @@ header li {
     #prof img {
         margin-right: 0;
     }
+
     .love {
         margin-left: 0px;
+    }
+
+    #prof .ex-overvew {
+        margin: 10px 0;
     }
 
     .magazine-content,
@@ -163,9 +175,18 @@ header li {
         padding-bottom: 40px;
         border-bottom: 1px dashed #7e7e7e;
     }
-    .love .flex,
+
+    /* .love .flex,
     .ex-phot {
         display: flex;
+
+    } */
+    .ex-year {
+        margin: 20px 0 5px;
+    }
+
+    .exvision .ex-phot img {
+        margin-top: 20px;
     }
 }
 
@@ -209,6 +230,7 @@ header li {
     width: 40%;
     height: auto;
 }
+
 .ex-overvew p {
     margin-left: 1rem;
 }
@@ -266,13 +288,20 @@ button:hover {
 }
 
 @media (max-width:750px) {
-    .ex-overvew h3 {
+    .sitegrid {
+        margin: 30px 0;
+    }
+
+    /* #site h3 {
+        margin-top: 20px;
+    } */
+    #site h4 {
         margin-top: 1em;
     }
 
     .sitelink img {
         width: 100%;
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
 
     .siteview {
@@ -313,6 +342,7 @@ button:hover {
     height: auto;
     margin-bottom: 30px;
 }
+
 .illustgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -331,6 +361,10 @@ button:hover {
 
 
 @media (max-width:750px) {
+    #illust .sitelink img {
+        width: 300px;
+        height: auto;
+    }
     .illustgrid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -440,12 +474,14 @@ button:hover {
         width: fit-content;
         height: 60vh;
     }
+
     .modal-content img {
         max-width: 300px;
         height: 50vh;
         object-fit: contain;
     }
 }
+
 /*========================== CONTACT ==========================*/
 #contact .flex {
     justify-content: space-around;
@@ -509,7 +545,8 @@ footer small {
     footer {
         padding-top: 150px;
     }
+
+    footer li {
+        margin-bottom: 3px;
+    }
 }
-
-
-
