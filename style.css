@@ -64,8 +64,17 @@ h2 {
     .flex {
         display: block;
     }
-
-
+    .wrapper {
+        text-align: center;
+        margin: 0;
+    }
+    .wrapper p,
+    h1,
+    h2,
+    h3,
+    h4  {
+        text-align: left;
+    }
 }
 
 /* =================HEADER================ */
@@ -113,8 +122,6 @@ header li {
 
 .love {
     border-top: 1px dashed #7e7e7e;
-    /* padding: 40px; */
-    margin-left: 270px;
 }
 
 .profname {
@@ -155,6 +162,7 @@ header li {
     #prof img {
         margin-right: 0;
     }
+    
 
     .love {
         margin-left: 0px;
@@ -187,6 +195,8 @@ header li {
 
     .exvision .ex-phot img {
         margin-top: 20px;
+        width: 230px;
+        height: auto;
     }
 }
 
@@ -327,12 +337,11 @@ button:hover {
 
     .ovv {
         margin-left: 0;
+        padding-bottom: 20px;
         width: 100%;
     }
-
-    .ovv img {
-        width: 200px;
-        height: auto;
+    .ovvcontent h4 {
+        margin-top: 0;
     }
 }
 
@@ -493,15 +502,17 @@ button:hover {
 }
 
 @media (max-width:750px) {
-    .adress {
+    /* #contact {
         text-align: center;
+
+    } */
+    .adress {
         margin-top: 30px;
     }
 
     #contact img {
         width: 200px;
         height: auto;
-        text-align: center;
     }
 }
 
