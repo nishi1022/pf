@@ -122,11 +122,19 @@ header li {
 
 .love {
     border-top: 1px dashed #7e7e7e;
+    padding: 30px 40px;
+}
+.love .flex {
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.love h4 {
+    text-align: center;
 }
 
-.profname {
+.proftop h3 {
     font-size: 24px;
-    margin-left: 70px;
+    text-align: center;
 }
 
 .profimg {
@@ -143,7 +151,7 @@ header li {
 
 .magazine-content,
 .exvision {
-    /* width: 50%; */
+    width: 50%;
     padding: 2%;
     /* font-size: 15px; */
     line-height: 1.2;
@@ -151,12 +159,8 @@ header li {
 
 .magazine-content {
     border-right: 1px solid #7e7e7e;
-    width: 40%;
 }
 
-.exvision {
-    width: 60%;
-}
 
 @media (max-width:750px) {
     #prof img {
@@ -354,60 +358,32 @@ button:hover {
 
 .illustgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
 
 }
-
-.thumbnail img {
-    object-fit: cover;
-    max-width: 170px;
-    max-height: 150px;
-
-    /* max-width: 100%;
-    height: 90%; */
-}
-
-
-@media (max-width:750px) {
-    #illust .sitelink img {
-        width: 300px;
-        height: auto;
-    }
-    .illustgrid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-}
-
-/*========================== ILLUSTpage ==========================*/
-#illustpage .top_image {
-    height: 30vh;
-}
-
-.illustgrid h3 {
-    margin: 20px;
-    width: 190px;
-}
-
-
 
 /* ===========モーダルCSS=========== */
 .thumbnail {
-    text-align: center;
+    max-width: 170px;
+    max-height: 100px;
+    /* object-fit: cover; */
+
+    /* text-align: center; */
     cursor: pointer;
     transition: all 0.3s;
     display: block;
     /* max-width:300px; */
-    line-height: 0;
+    /* line-height: 0; */
 }
 
-.thumbnail:active {
+/* .thumbnail:active { */
     /*ボタンを押したとき*/
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
+    /* -webkit-transform: translateY(2px);
+    transform: translateY(2px); */
     /*下に動く*/
-}
+/* } */
 
 .modal-wrapper {
     z-index: 999;
@@ -416,7 +392,7 @@ button:hover {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 40px;
+    /* padding: 40px; */
     text-align: center;
 }
 
@@ -426,11 +402,11 @@ button:hover {
     transition: opacity .3s, visibility .3s;
 }
 
-.modal-wrapper:target {
+/* .modal-wrapper:target {
     opacity: 1;
     visibility: visible;
-    transition: opacity .4s, visibility .4s;
-}
+    transition: opacity .4s, visibility: .4s;
+} */
 
 .modal-wrapper::after {
     display: inline-block;
@@ -441,16 +417,16 @@ button:hover {
 }
 
 .modal-wrapper .modal-window {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: inline-block;
     z-index: 20;
     position: relative;
     /* max-width: 70%;
     max-height: 70%; */
     width: fit-content;
-    height: 90vh;
+    /* height: 90vh; */
     /* max-width: 600px; */
-    padding: 10px;
+    /* padding: 10px; */
     /* border-radius: 30px; */
     background: #fff;
     /* box-shadow: 0 0 30px rgba(0, 0, 0, .6); */
@@ -477,8 +453,16 @@ button:hover {
     object-fit: contain;
 }
 
-
 @media (max-width:750px) {
+    #illust .sitelink img {
+        width: 300px;
+        height: auto;
+    }
+    .illustgrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /* ===========モーダルCSS=========== */
     .modal-wrapper .modal-window {
         width: fit-content;
         height: 60vh;
@@ -489,16 +473,33 @@ button:hover {
         height: 50vh;
         object-fit: contain;
     }
+
 }
 
 /*========================== CONTACT ==========================*/
-#contact .flex {
-    justify-content: space-around;
+#contact {
+    margin-bottom: 30px;
 }
+/* #contact .flex {
+    justify-content: space-around;
+} */
 
 #contact img {
     width: 400px;
     height: auto;
+}
+.adress {
+    padding-top: 3em;
+    text-align: center;
+    line-height: 2.2;
+    width: 50%;
+}
+
+#contact small {
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 1.7;
+
 }
 
 @media (max-width:750px) {
@@ -519,7 +520,8 @@ button:hover {
 
 /*========================== FOOTER ==========================*/
 footer {
-    padding-top: 370px;
+    padding: 300px 5% 10px 5%;
+
     text-align: center;
 
     background-image: url(img/tnks.jpg);
@@ -532,18 +534,10 @@ footer {
 }
 
 footer .flex {
-    margin: 20px 50px;
+    margin: 20px 0;
     align-items: center;
     justify-content: space-around;
-}
-
-footer img {
-    width: 30px;
-    height: auto;
-}
-
-footer p {
-    margin: 0px;
+    padding: 0 50px;
 }
 
 footer small {
