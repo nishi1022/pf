@@ -121,7 +121,6 @@ header li {
 /* =================PROF================ */
 
 .love {
-    border-top: 1px dashed #7e7e7e;
     padding: 30px 40px;
 }
 .love .flex {
@@ -160,6 +159,7 @@ header li {
 .magazine-content {
     border-right: 1px solid #7e7e7e;
 }
+
 
 
 @media (max-width:750px) {
@@ -242,7 +242,9 @@ header li {
 
 .siteview {
     width: 40%;
-    height: auto;
+}
+.siteview img {
+    max-height: 800px;
 }
 
 .ex-overvew p {
@@ -365,7 +367,7 @@ button:hover {
 }
 
 /* ===========モーダルCSS=========== */
-.thumbnail {
+#illust .thumbnail {
     max-width: 170px;
     max-height: 100px;
     /* object-fit: cover; */
