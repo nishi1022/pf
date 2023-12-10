@@ -81,7 +81,7 @@ h2 {
 header {
     width: 270px;
     background-color: aliceblue;
-    border-radius: 50px;
+    border-radius: 0 0 50px 0;
     padding: 3%;
     opacity: 0.8;
     /* display: flex;
@@ -100,15 +100,15 @@ header ul {
 header li {
     margin-bottom: 10px;
     font-size: 20px;
-    text-indent: 1em;
+    text-indent: 1.5em;
 }
 
 .top {
     background-image: url(img/pctop.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
+    height: 90vh;
 }
 
 @media (max-width:750px) {
@@ -142,6 +142,11 @@ header li {
     margin-right: 2em;
 }
 
+.love_others,
+.love_others h4 {
+    text-align: left;
+}
+
 
 .ex-year {
     margin: 10px 0 5px;
@@ -158,6 +163,12 @@ header li {
 
 .magazine-content {
     border-right: 1px solid #7e7e7e;
+}
+
+.ex-phot img {
+    max-height: 170px;
+    width: auto;
+    margin-left: 10px;
 }
 
 
