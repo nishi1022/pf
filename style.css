@@ -65,7 +65,8 @@ h2 {
     background-size: 10px;
 }
 
-#prof small {
+#prof small,
+#site small {
     text-indent: 1.5em;
     display: block;
 }
@@ -177,7 +178,7 @@ header li {
 }
 
 .ex-phot img {
-    max-height: 170px;
+    max-height: 130px;
     width: auto;
     margin-left: 10px;
 }
@@ -264,11 +265,11 @@ header li {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.siteview {
-    width: 40%;
-}
+/* .siteview {
+    width: 30%;
+} */
 .siteview img {
-    max-height: 800px;
+    max-height: 80vh;
     width: auto;
     border: 1px solid #000;
     margin-left: 10px;
@@ -286,7 +287,7 @@ header li {
 
 .ovv {
     margin-left: 20px;
-    width: 60%;
+    /* width: 70%; */
 }
 
 .ovvcontent {
@@ -299,11 +300,9 @@ header li {
     margin: 0;
 }
 
-.ovvcontent .flex img {
-    max-height: auto;
-    width: 50%;
-}
-.ovvcontent .flex img  {
+.ovvcontent img {
+    /* height: auto;
+    width: 50%; */
     margin-right: 10px;
 }
 
