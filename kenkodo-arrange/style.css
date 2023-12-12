@@ -24,13 +24,6 @@ a {
     text-align: center;
 }
 
-/* a:hover {
-    border: 1px solid #ff8931;
-    background-color: #ffeec0;
-    color: #6c3819;
-    /*
-    background-image: url(icon-mame.svg);
-} */
 a:hover {
     color: rgb(0, 0, 0, 0.5);
     background-color: #ff9b4f;
@@ -42,6 +35,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 
 @media (max-width:700px) {
     .flex {
@@ -70,7 +64,7 @@ ul {
 }
 
 nav li {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 /* li+li {
@@ -79,16 +73,21 @@ nav li {
 .nav-logo {
     background-image: url(icon-mame.svg);
     background-repeat: no-repeat;
-    background-position: top 30px center;
+    background-position: top 35px center;
     padding-top: 7px;
     background-size: 50px;
+}
+
+.nav-logo a:hover {
+    color: rgb(0, 0, 0, 0.5);
+    background-color: #fff;
+    transition: 0.2s;
 }
 
 h1 {
     font-size: 24px;
     font-weight: normal;
 }
-
 
 .pctop {
     display: block !important;
@@ -100,22 +99,30 @@ h1 {
 
 /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
 @media only screen and (max-width: 700px) {
-    /* .flex {} */
-
     .pctop {
         display: none !important;
     }
 
     .sptop {
         display: block !important;
+        margin-top: 30px;
     }
 }
 
-/* @media (max-width:700px) {
-    header img {
-
+@media (max-width:700px) {
+    .nav-logo {
+        background-position: top 35px left 2.5em;
+        padding-top: 30px;
+        background-size: 50px;
     }
-} */
+    h1 {
+        display: inline;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
 
 /*----------------MAIN 共通----------------*/
 section {
@@ -291,6 +298,7 @@ textarea {
     background-size: 30px;
     padding: 12px;
 }
+
 /* 
 @media (max-width:700px) {
     .shop {
@@ -427,6 +435,7 @@ address {
     address {
         margin-bottom: 30px;
     }
+
     .footer-link {
         margin: 0 50px;
     }
