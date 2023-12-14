@@ -56,8 +56,14 @@ h2 {
     padding-left: 40px;
     background-image: url(img/slash.svg), url(img/slash.svg);
     /* position: relative; */
-    background-position: top left, bottom left 220px;
+    background-position: top left, bottom left 200px;
     background-size: 10px;
+}
+#illust h2 {
+    background-position: top left, bottom left 250px;
+}
+#contact h2 {
+    background-position: top left, bottom left 185px;
 }
 
 #prof small,
@@ -138,6 +144,10 @@ header li {
     h2 {
         margin-bottom: 30px;
     }
+    .top {
+        height: 80vh;
+        background-position: left 70%;
+    }
 }
 
 /* =================PROF================ */
@@ -148,9 +158,13 @@ header li {
 
 .love .flex {
     justify-content: space-around;
-    padding-top: 10px;
 }
 
+.love h3:first-of-type {
+    margin-bottom: 0;
+}
+
+.love h3,
 .love h4 {
     text-align: center;
 }
@@ -199,8 +213,15 @@ header li {
     }
 
 
-    .love {
-        margin-left: 0px;
+    .love h4 {
+        margin: 0px;
+    }
+    .love img {
+        margin-top: 0;
+    }
+    .love p {
+        text-align: center;
+        /* padding: 1em; */
     }
 
     #prof .ex-overvew {
@@ -228,6 +249,17 @@ header li {
         margin: 20px 0 5px;
     }
 
+    .love_others h4 {
+        margin-top: 10px;
+    }
+    .love_others p,
+    .magazine-content p,
+    .exvision p {
+        text-align: left;
+    }
+    .love_others p {
+        margin-left: 1em;
+    }
     .exvision .ex-phot img {
         margin-top: 20px;
     }
@@ -269,13 +301,9 @@ header li {
     /* cursor: url(icon/syousai.svg),auto; */
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* .hidden {
+.hidden {
     display: none;
-} */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+}
 
 /* .siteview {
     width: 30%;
@@ -302,9 +330,9 @@ header li {
     /* width: 70%; */
 }
 
-.ovvcontent {
+/* .ovvcontent {
     padding: 20px 40px;
-}
+} */
 
 .ovvcontent h4 {
     margin: 0;
@@ -428,6 +456,9 @@ button:hover {
 
 /*========================== ILLUST ==========================*/
 
+#illust p {
+    text-align: center;
+}
 #illust small {
     margin: 20px 0;
 }
@@ -440,7 +471,7 @@ button:hover {
 
 .illustgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 15px;
     margin-top: 20px;
     padding: 0 5%;
@@ -535,7 +566,7 @@ button:hover {
 }
 
 .modal-content img {
-    width: auto;
+    max-width: 80vw;
     height: 83vh;
     object-fit: contain;
 }
@@ -564,14 +595,18 @@ button:hover {
 
     /* ===========モーダルCSS=========== */
     .modal-wrapper .modal-window {
-        width: fit-content;
-        height: 60vh;
+        width: 90vw;
+        height: fit-content;
+        padding: 15px;
     }
 
     .modal-content img {
-        max-width: 300px;
-        height: 50vh;
+        max-width: 80vw;
+        height: 60vh;
         object-fit: contain;
+    }
+    .modal-content_p {
+        padding: 0 30px;
     }
 
 }
@@ -622,12 +657,9 @@ button:hover {
 
 /*========================== FOOTER ==========================*/
 footer {
-    padding: 300px 5% 10px 5%;
+    padding-top: 100px;
 
     text-align: center;
-
-    background-image: url(img/tnks.jpg);
-    background-size: contain;
 }
 
 .footer-fst {
