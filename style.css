@@ -74,6 +74,9 @@ h2 {
     font-size: 14px;
 }
 
+rt {
+    color: #8f8178;
+}
 
 @media (max-width:750px) {
     .flex {
@@ -171,13 +174,18 @@ header li {
 
 .proftop h3 {
     font-size: 24px;
-    text-align: center;
+    margin-left: 35px;
 }
 
 .profimg {
     width: 170px;
     height: auto;
     margin-right: 2em;
+    margin-top: 30px;
+}
+
+.profex {
+    text-indent: 1em;
 }
 
 .love_others,
@@ -207,11 +215,18 @@ header li {
     margin-left: 10px;
 }
 
+.prof_site {
+    margin-top: 30px;
+}
+
 @media (max-width:750px) {
     #prof img {
         margin-right: 0;
     }
 
+    .proftop h3 {
+        text-align: center;
+    }
 
     .love h4 {
         margin: 0px;
