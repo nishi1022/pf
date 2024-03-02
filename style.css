@@ -138,7 +138,8 @@ header li {
 
 @media (max-width:750px) {
     header {
-        width: 40%;
+        width: 60%;
+        box-sizing: initial;
     }
 
     h1 {
@@ -588,7 +589,7 @@ button:hover {
 
 .modal-content_p {
     width: 400px;
-    padding: 50px;
+    padding: 30px 30px 30px 0;
 }
 
 .modal-content_p img {
@@ -622,6 +623,7 @@ button:hover {
     }
     .modal-content_p {
         padding: 0 30px;
+        width: 100%;
     }
 
 }
