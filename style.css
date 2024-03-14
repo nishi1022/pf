@@ -59,9 +59,11 @@ h2 {
     background-position: top left, bottom left 200px;
     background-size: 10px;
 }
+
 #illust h2 {
     background-position: top left, bottom left 250px;
 }
+
 #contact h2 {
     background-position: top left, bottom left 185px;
 }
@@ -145,9 +147,11 @@ header li {
     h1 {
         text-align: center;
     }
+
     h2 {
         margin-bottom: 30px;
     }
+
     .top {
         height: 80vh;
         background-position: left 70%;
@@ -204,6 +208,7 @@ header li {
     border-bottom: 1px dashed #ccb8a5;
     padding-bottom: 5px;
 }
+
 /* #prof .ex-overvew:last-child {
     border-bottom: none;
 } */
@@ -241,9 +246,11 @@ header li {
     .love h4 {
         margin: 0px;
     }
+
     .love img {
         margin-top: 0;
     }
+
     .love p {
         text-align: center;
         /* padding: 1em; */
@@ -270,6 +277,7 @@ header li {
         display: flex;
 
     }
+
     .ex-year {
         margin: 20px 0 5px;
     }
@@ -277,18 +285,22 @@ header li {
     .love_others h4 {
         margin-top: 10px;
     }
+
     .love_others p,
     .magazine-content p,
     .exvision p {
         text-align: left;
     }
+
     .love_others p {
         margin-left: 1em;
     }
+
     .exvision .ex-phot img {
         margin-top: 20px;
     }
-    #prof small{
+
+    #prof small {
         text-align-last: left;
         margin-left: 1em;
     }
@@ -302,7 +314,8 @@ header li {
     padding-top: 50px;
 }
 
-#site h4 {
+#site h4,
+#illust h3 {
     margin: 30px 0 10px;
     border-bottom: 2px dashed #ffbb94;
     padding-left: 1em;
@@ -362,6 +375,7 @@ header li {
 .ovvcontent h4 {
     margin: 0;
 }
+
 .ovvcontent p {
     margin-left: 1em;
 }
@@ -467,13 +481,16 @@ button:hover {
     .ovvcontent h4 {
         margin-top: 0;
     }
+
     .ovvcontent .flex img {
         height: auto;
         width: 95%;
     }
+
     .ovv_flex {
         display: block;
     }
+
     .ovv_flex img {
         margin-top: 15px;
     }
@@ -481,18 +498,43 @@ button:hover {
 
 /*========================== ILLUST ==========================*/
 
-#illust p {
-    text-align: center;
+#illust .sitelink img {
+    margin-bottom: 10px;
 }
+
+.banner {
+    border-bottom: 1px solid #ccb8a5;
+    padding: 70px 0;
+}
+.banner_img {
+    margin-right: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.banner_s {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.banner_ex {
+    text-align: left;
+    /* margin-left: 1em; */
+}
+
 #illust small {
     margin: 20px 0;
 }
+#illust .banner small {
+    margin: 0 0 20px 0;
+}
 
-#illust .sitelink img {
+/* #illust .sitelink img {
     width: 500px;
     height: auto;
     margin-bottom: 30px;
-}
+} */
 
 .illustgrid {
     display: grid;
@@ -599,6 +641,7 @@ button:hover {
 .modal-content_p {
     width: 400px;
     padding: 30px 30px 30px 0;
+    text-align: center;
 }
 
 .modal-content_p img {
@@ -609,6 +652,20 @@ button:hover {
 
 
 @media (max-width:750px) {
+    .banner + .banner {
+        padding: 100px 0;
+    }
+    .banner .sitelink img {
+        width: 00px;
+        height: auto;
+    }
+    .c_flex {
+        display: block;
+    }
+    .c_flex_img {
+        display: flex;
+    }
+    
     #illust .sitelink img {
         width: 300px;
         height: auto;
@@ -630,6 +687,7 @@ button:hover {
         height: 60vh;
         object-fit: contain;
     }
+
     .modal-content_p {
         padding: 0 30px;
         width: 100%;
@@ -671,6 +729,7 @@ button:hover {
         margin: 0 auto;
         width: 100%;
     }
+
     .adress p {
         text-align: center;
     }
