@@ -193,6 +193,21 @@ header li {
     text-indent: 1em;
 }
 
+.skillflex h4 {
+    text-indent: 1em;
+    font-size: 16px;
+    margin-top: 5px;
+    border-bottom: #ccb8a5;
+} 
+.skillflex h5 {
+    text-indent: 2em;
+    font-size: 16px;
+    margin-top: 5px;
+} 
+.skillflex p {
+    margin-left: 2em;
+} 
+
 .love_others,
 .love_others h4 {
     text-align: left;
