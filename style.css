@@ -193,27 +193,27 @@ header li {
     text-indent: 1em;
 }
 
-.skillflex h4 {
-    text-indent: 1em;
-    font-size: 16px;
-    margin-top: 5px;
-    border-bottom: #ccb8a5;
-} 
-.skillflex h5 {
-    text-indent: 2em;
-    font-size: 16px;
-    margin-top: 5px;
-} 
-.skillflex p {
-    margin-left: 2em;
-} 
 
 .love_others,
 .love_others h4 {
     text-align: left;
 }
 
+.skillflex h4 {
+    border-bottom: 1px solid #ccb8a5;
+    width: fit-content;
+    margin: 10px 0;
+} 
 
+.skillflex h5 {
+    text-indent: 2em;
+    font-size: 16px;
+} 
+.skillflex p {
+    margin-left: 2em;
+    margin-bottom: 15px;
+    padding: 0 1em;
+} 
 .ex-year {
     margin: 10px 0 5px;
 }
@@ -224,16 +224,10 @@ header li {
     padding-bottom: 5px;
 }
 
-/* #prof .ex-overvew:last-child {
-    border-bottom: none;
-} */
-
-
 .magazine-content,
 .exvision {
     width: 50%;
     padding: 2%;
-    /* font-size: 15px; */
     line-height: 1.2;
 }
 
@@ -268,7 +262,17 @@ header li {
 
     .love p {
         text-align: center;
-        /* padding: 1em; */
+    }
+
+    .skillflex h4,
+    .skillflex h5,
+    .skillflex p {
+        text-align: center;
+        text-indent: none;
+    } 
+    .skillflex:last-child,
+    .skillflex .ex-overvew {
+        margin-bottom: 100px;
     }
 
     #prof .ex-overvew {
@@ -309,6 +313,12 @@ header li {
 
     .love_others p {
         margin-left: 1em;
+    }
+    .skillflex h4 {
+        margin: 20px 0 5px 0;
+    } 
+    .magazine-content {
+        border: none;
     }
 
     .exvision .ex-phot img {
